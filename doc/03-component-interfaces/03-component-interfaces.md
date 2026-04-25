@@ -96,7 +96,7 @@ do good work.
 
 Below is further rationale/explanation for the rubric items above:
 
-1. Because these assignments bui0ld on each other, it's important
+1. Because these assignments build on each other, it's important
    to acknowledge the growth and development of your work. Therefore, you must
    show what has been changed following the proof-of-concept as it pertains
    to the interface design.
@@ -192,15 +192,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
-## YYYY.MM.DD
+## 2026.04.25
 
 ### Added
 
-- Designed kernel and enhanced interfaces for <!-- insert name of component here --> component
+- Designed kernel and enhanced interfaces for Deck component component
 
 ### Updated
 
-- Changed design to include ...
+- Changed design to include size, drawMult, ShuffleIn, and scry.
 
 ```
 
