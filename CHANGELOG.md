@@ -12,6 +12,16 @@ the following form: YYYY.0M.0D.
 - Fixed broken links
 - Disabled AI features globally
 
+## 2026.04.25
+
+### Added
+
+- Designed kernel implementation for Deck component
+
+### Updated
+
+- Changed design to include the implementation of the kernel methods on top of java.util.List.
+
 ## [2024.12.30]
 
 - Added table-based rubrics to all 6 parts of the project
