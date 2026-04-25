@@ -12,6 +12,16 @@ the following form: YYYY.0M.0D.
 - Fixed broken links
 - Disabled AI features globally
 
+## 2026.04.25
+
+### Added
+
+- Designed abstract class for Deck component
+
+### Updated
+
+- Changed design to include DeckSecondary drawMult, scry, and shuffleIn method implementations and SimpleCard name and cost method implementations.
+
 ## [2024.12.30]
 
 - Added table-based rubrics to all 6 parts of the project
