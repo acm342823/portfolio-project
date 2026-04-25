@@ -18,11 +18,13 @@ the following form: YYYY.0M.0D.
 
 - Designed kernel and enhanced interfaces for Deck component component
 - Designed abstract class for Deck component
+- Designed kernel implementation for Deck component
 
 ### Updated
 
 - Changed design to include size, drawMult, ShuffleIn, and scry.
 - Changed design to include DeckSecondary drawMult, scry, and shuffleIn method implementations and SimpleCard name and cost method implementations.
+- Changed design to include the implementation of the kernel methods on top of java.util.List.
 
 ## [2024.12.30]
 
