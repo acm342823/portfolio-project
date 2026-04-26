@@ -1,3 +1,5 @@
+package components.deck;
+
 import java.util.Scanner;
 
 /**
@@ -63,7 +65,7 @@ public interface Deck extends DeckKernel {
      *     this.cost = cost
      * </pre>
      */
-    interface Card {
+    public interface Card {
         /**
          * Returns this {@code Card}'s name.
          *

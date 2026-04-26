@@ -1,7 +1,10 @@
-import java.util.Iterator;
+package components.deck;
+
+import components.standard.Standard;
 
 /**
- * Deck kernel component with primary methods.
+ * Deck kernel component with primary methods. (Note: by package-wide
+ * convention, all references are non-null.))
  *
  * @mathdefinitions <pre>
  * this contains a number of cards in a particular order
@@ -13,7 +16,7 @@ import java.util.Iterator;
  *   this = {}
  * </pre>
  */
-public interface DeckKernel extends Iterator<Deck> {
+public interface DeckKernel extends Standard<Deck> {
 
     /**
      * Removes the top card from {@code this}.
