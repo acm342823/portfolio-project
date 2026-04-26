@@ -1,12 +1,10 @@
 # Portfolio Part 1: Component Brainstorming
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
-- **Due Date**: <!-- TODO: fill with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
+- **Name**: Anna McCracken
+- **Dot Number**: mccracken.164
+- **Due Date**: a while ago, I don't remember
 
 ## Assignment Overview
-
-<!-- TODO: read the assignment overview then delete this comment -->
 
 The overall goal of the portfolio project is to have you design and implement
 your own OSU component. There are no limits to what you choose to design and
@@ -29,8 +27,6 @@ implement.
 
 ## Assignment Checklist
 
-<!-- TODO: browse the checklist then delete this comment -->
-
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
 opening the TODOs window from the sidebar. The icon looks like a tree and will
@@ -52,8 +48,6 @@ to the tree diagram (you may remove this one as well):
 
 ## Assignment Learning Objectives
 
-<!-- TODO: read the assignment learning objectives then delete this comment -->
-
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
 what we're hoping you will learn through this particular aspect of the portfolio
@@ -66,8 +60,6 @@ project. Specifically, students should be able to:
    discipline
 
 ## Assignment Rubric: 10 Points
-
-<!-- TODO: read the assignment rubric then delete this comment -->
 
 Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments
@@ -106,23 +98,15 @@ Below is further rationale/explanation for the rubric items above:
 > brainstorming. Plus it helps us get to know you better! Feel free to share
 > images in this section.
 
-<!-- TODO: briefly talk about your interests then delete this comment.
-Also, protip: you can preview what your response looks like by hitting
-the magnifying glass icon in the upper-right corner or pressing CTRL+K and
-then V. This kind of button combination is called a chord, for whatever
-reason -->
+I hope to go into the technology field when I grow up to make enough money to support myself because I feel its something I'll be good at. I also hope to be a lawyer, at this point I'm considering disability law. My favorite game is Magic the Gathering, which is a card game. Recently, I regained an interest in the sciences, specifically in physics and chemistry.
 
 ## Assignment
-
-<!-- TODO: read the assignment section then delete this comment -->
 
 As previously stated, you are tasked with brainstorming 3 possible components.
 To aid you in this process, we have provided [some example components][example-components]
 that may help you in your brainstorming. All of these components were made at
 some point by one of your peers, so you should feel confident that you can
 accomplish any of them.
-
-<!-- TODO: browse the list of possible projects then delete this comment -->
 
 There is no requirement that you use any of the components listed above.
 If you want to model something else, go for it! Very common early object
@@ -142,8 +126,6 @@ list-like components that have different ways of manipulating the data. Think
 about different ways you might allow a client to manipulate your component.
 
 ### Example Component
-
-<!-- TODO: review this example component then delete this comment -->
 
 To help you brainstorm a few components, we've provided an example below of a
 component you already know well: NaturalNumber. We highly recommend that you
@@ -211,68 +193,80 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-- Component Design #1: <!-- TODO: give component a name then delete this comment -->
+- Component Design #1: Deck
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - Models a deck from Magic the Gathering. Stores cards in an order
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - shuffle(): randomizes the positions of all cards in deck
+    - draw(): removes and returns the top card of the deck
+    - add(Card c, boolean top): adds a card to the top of the deck if top is true and the bottom if false
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - drawMult(int n): removes and returns an array of n cards from the top of the deck
+    - scry(int n): shows the user the top n cards and lets them choose to put each card on the top or bottom
+    - shuffleIn(Card[] ca): adds cards from ca into this then reandomizes the positions of all cards in this
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, cards can be removed from the deck with draw and added to the deck with shuffle
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, it would have a Card class
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I don't think so
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, drawMult can call draw multiple times, scry calls draw and add, and shuffleIn calls add and shuffle
 
-- Component Design #2: <!-- TODO: give component a name then delete this comment -->
+- Component Design #2: Hand
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - Models a player hand from Magic the Gathering
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - discard(Card c): removes card from this
+    - draw(Card c): adds card to this
+    - cards(): returns an array(?) of cards in this
+    - hasCard(Card c): returns a boolean denoting whether or not this has card c
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - drawMult(Card[] ca): draw more than once
+    - discardMult(Card[] ca): discard more than once
+    - cycle(Card c1, Card c2): discard then draw
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, it can be modified by discard and draw
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, it also needs the Card class
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - No
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, drawMult is multiple draw, discardMult is multiple discards, cycle is discard and draw
 
-- Component Design #3: <!-- TODO: give component a name then delete this comment -->
+- Component Design #3: Graveyard
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - Models a graveyard from Magic the Gathering
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - discard(Card c): adds c to the top of this
+    - remove(Card c): removes c from this
+    - hasCard(Card c): checks if this has c
+    - cards(): returns an array of cards in this
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - discardMult(Card[] ca): adds all cards in ca to the top of this
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, discard and remove modify it
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Still uses Card class
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - No
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I use discardMult by doing multiple discards
 
 ## Post-Assignment
 
@@ -280,8 +274,6 @@ The following sections detail everything that you should do once you've
 completed the assignment.
 
 ### Changelog
-
-<!-- TODO: create CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -299,13 +291,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
-## YYYY.MM.DD
+## 2026.04.24
 
 ### Added
 
-- Designed a <!-- insert name of component 1 here --> component
-- Designed a <!-- insert name of component 2 here --> component
-- Designed a <!-- insert name of component 3 here --> component
+- Designed a Deck component
+- Designed a Hand component
+- Designed a Graveyard component
 ```
 
 Here `YYYY.MM.DD` would be the date of your submission, such as 2024.04.21.
@@ -320,8 +312,6 @@ of development.
 
 ### Submission
 
-<!-- TODO: read the submission instructions then delete this comment -->
-
 If you have completed the assignment using this template, we recommend that
 you convert it to a PDF before submission. If you're not sure how, check out
 this [Markdown to PDF guide][markdown-to-pdf-guide]. However, PDFs should be
@@ -330,11 +320,7 @@ all your work is there before submitting. For future assignments, you will
 just be submitting a link to a pull request. This will be the only time
 you have to submit any PDFs.
 
-<!-- TODO: upload a PDF of this document and the CHANGELOG to Carmen then delete this comment -->
-
 ### Peer Review
-
-<!-- TODO: review the peer review guidelines then delete this comment -->
 
 Following the completion of this assignment, you will be assigned three
 students' component brainstorming assignments for review. Your job during the
@@ -360,8 +346,6 @@ PDF to read this rubric as a table).
 If you'd like to give feedback for this assignment (or any assignment, really),
 make use of [this survey][survey]. Your feedback helps make assignments
 better for future students.
-
-<!-- TODO: follow the link to share your feedback then delete this comment -->
 
 [example-components]: https://therenegadecoder.com/code/the-never-ending-list-of-small-programming-project-ideas/
 [markdown-to-pdf-guide]: https://therenegadecoder.com/blog/how-to-convert-markdown-to-a-pdf-3-quick-solutions/

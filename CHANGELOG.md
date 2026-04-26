@@ -94,3 +94,17 @@ the following form: YYYY.0M.0D.
 [unreleased]: https://github.com/jrg94/portfolio-project/compare/v2024.08.07...HEAD
 [2024.08.07]: https://github.com/jrg94/portfolio-project/compare/v2024.01.07...v2024.08.07
 [2024.01.07]: https://github.com/jrg94/portfolio-project/releases/tag/v2024.01.07
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Calendar Versioning](https://calver.org/) of
+the following form: YYYY.0M.0D.
+
+## 2026.04.24
+
+### Added
+
+- Designed a Deck component
+- Designed a Hand component
+- Designed a Graveyard component
